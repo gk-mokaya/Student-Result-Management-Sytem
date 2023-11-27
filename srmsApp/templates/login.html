@@ -15,6 +15,18 @@
         object-fit: scale-down;
         object-position: center center;
     }
+    #viewr{
+        font-size: xx-large;
+        background-color: rgb(6, 6, 244);
+        font-family: 'Times New Roman', Times, serif;
+        padding-left:10px;
+        padding-right:10px;
+        font-weight: bolder;
+        margin-left: 25%;
+        border-radius: 10px;
+        width: 7cm;
+        text-align: center;
+    }
 </style>
 <div class="d-flex flex-column w-100 justify-content-center align-items-center">
     <div class="mb-2">
@@ -26,8 +38,21 @@
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card card-default rounded-0 shadow">
             <div class="card-header">
-                <h4 class="card-title"><b>Login</b></h4>
+                <h4 class="card-title"><b>Click Button Below to view Results</b></h4>
             </div>
+
+            <div class="form-group mb-3">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="col-md-4" id="viewr">
+                        <a href="javascript:void(0)" id="find_result">View Results</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-header">
+                <h4 class="card-title"><b>Admninistrator Login</b></h4>
+            </div>
+
             <div class="card-body">
                 <div class="container-fluid">
                     <form id="login-user">
@@ -40,16 +65,10 @@
                             <label for="password" class="control-label">Password</label>
                             <input type="password" class="form-control rounded-0" name="password" id="password" required="required">
                         </div>
-                        <div class="form-group mb-3">
-                            <div class="d-flex w-100 justify-content-between align-items-center">
-                                <div class="col-md-4">
-                                    <a href="javascript:void(0)" id="find_result">View Student Results</a>
-                                </div>
-                                <button class="btn btn-sm rounded-0 btn-primary">
-                                        Login
-                                    </button>
-                            </div>
-                        </div>
+                        <button class="btn btn-sm rounded-0 btn-primary">
+                            Login
+                        </button>
+
                     </form>
                 </div>
             </div>
